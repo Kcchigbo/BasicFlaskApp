@@ -8,27 +8,27 @@ app = Flask(__name__)
 #Function Name help generate URL's within a path to trigger responses/requests into browser
 @app.route('/', methods = ['GET'])
 def about():
-    return render_template('1_about.html')
+    return render_template('a1_about.html')
 
 @app.route('/projects', methods = ['GET'])
 def projects():
-    return render_template('2_projects.html')
+    return render_template('a2_projects.html')
 
 @app.route('/portfolio', methods = ['GET'])
 def portfolio():
-    return render_template('3_portfolio.html')
+    return render_template('a3_portfolio.html')
 
 @app.route('/blogs', methods = ['GET'])
 def blogs():
-    return render_template('4_blogs.html')
+    return render_template('a4_blogs.html')
 
 @app.route('/badges', methods = ['GET'])
 def badges():
-    return render_template('5_badges.html')
+    return render_template('a5_badges.html')
 
 @app.route('/contact', methods = ['GET'])
 def contact():
-    return render_template('6_contact.html')
+    return render_template('a6_contact.html')
 
 if __name__ == '__main__':
     app.run(host ='127.0.0.1', port = 5000, debug = True)
