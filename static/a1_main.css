@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700');
+@import url('hhttps://fonts.googleapis.com/css?family=Playfair+Display&display=swap'); 
+
+html, div{
+    height: 100%; 
+}
+
+*{
+  /* Styling for all elements */
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  list-style: none;/*no listing/bullet points visible*/
+  text-decoration: none; /*no underlines or highlights*/
+  font-family: 'Saira Extra Condensed', sans-serif; 
+  text-transform: uppercase;
+  letter-spacing: .06em;
+/*   transform: rotate(90deg); for icons, images, texts
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);*/
+/*   text-align: center; */
+/*   margin-bottom: 30px; */
+}
+
+body {
+/*Dark Background */ 
+  background-color: #24251F;
+}
+
+.highlight{
+  color: #228816;
+}
+
+.container{
+  display: flex; /* Making a side bar,using a main wrapper to divide subsection of a div beside eachother*/
+  position: relative; /*Shows text in from of container*/  
+}
+
+
+/*Menubar section*/
+.container .menubar{
+  width: 260px;
+  background-color: #228816;
+  position:fixed;
+}
+
+/*Background subsections for profile */
+.container .menubar ul .profile{
+  background-color: white;
+  padding: 6px 0px; 
+  text-align: center;
+}
+
+.container .menubar ul .profile .profile_img img{
+  width: 125px;
+  height: 125px;
+  border-radius: 65px;
+  border: 1px solid #228816;
+  padding: 6px;
+  background-color:#228816;
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  vertical-align: bottom;
+}
+
+.container .menubar ul .profile .profile_img:hover img{
+  opacity: 0.5;
+  padding: 3px;
+}
+
+.container .menubar ul .profile h1 span{
+  font-size: 32px;
+}
+
+.container .menubar ul .profile h2 span{
+  font-size: 20px;
+  background-color: white;
+
+}
+
+.container .menubar ul .profile .contact_info a{
+  font-size: medium;
+  color: #24251F;
+}
+.container .menubar ul .profile .contact_info a:hover{
+  font-size: large;
+  color: #24251F;
+}
+.container .menubar ul .profile .socials a, .container .menu_info .socials a{
+  color: #565555;
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+ .fa-facebook:hover, .fa-github:hover, .fa-file-pdf:hover{
+  font-size: 50px;
+  color: #228816;
+}
+
+.container .menubar ul .profile .socials a img, .container .menu_info .socials a img{
+  width: 30px;
+  height:30px;
+  vertical-align: -6px;
+  -webkit-filter: grayscale(100%);
+  -moz--filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  
+}
+.container .menubar ul .profile .socials a img:hover, .container .menu_info .socials a img:hover {
+  width:65px;
+  height:65px;
+} 
+
+
+/*Background subsections for Links */
+.container .menubar ul li{
+  padding: 20px;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  border-bottom: 1px solid rgba(0,0,0,0.10);
+  border-right: 1px solid rgba(34,136,22,0.40);
+  border-width: 1px 3px;
+  font-size: large;
+}
+
+/*Links*/
+.container .menubar ul li a{ 
+  color: #F6F6F6;
+  display: block;
+}
+
+/*Icons*/
+.container .menubar ul li a i.fas{ 
+  color: #24251F;
+  width: 25px;
+  padding-right:25px;
+  padding-left:10px;
+}
+
+.fa-chevron-circle-down{ 
+  padding: 4px 20px;
+  float: right;
+}
+/*Background subsection for links hover*/
+.container .menubar ul li:hover{
+  background-color: #24251F;
+}
+/*When hover background,links change color*/
+.container .menubar ul li:hover a {
+  color: white;
+}
+/*When hover background,Icons change color*/
+.container .menubar ul li:hover a i{
+  color: #228816;
+}
+
+/*Hidding the dropdown submenu*/
+.container .menubar ul ul ul{
+  display:none;
+  float:right; 
+}
+
+/*When hover portfolio, display dropdown submenu*/
+.container .menubar ul ul:hover ul {
+  display:block;
+}
+
+#CONTACT{
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+
+span{
+  color: #228816;
+  background-color: #24251F;
+  padding:0;
+  font-size:18px;
+  font-weight: bold;
+}
+
+/*Menu info & details */
+.container .menu_info{
+  width: 81.8%;
+  height: 250px;
+  position: relative;
+  /*Editing the dark gray background*/
+  top: 100%;
+  left: 18.2%;
+  display: block;
+  background-color: #24251F;
+  padding-left: 260px;
+  padding-top: 130px;
+}
+container .menu_info .headers, .container .menu_info .headers span{
+  font-size:90px;
+}
+.container .menu_info .headers{
+  color: white;
+  height: 120px;
+  font-size:90px;
+}
+
+.container .menu_info .info, .container .menu_info .info span{
+  font-size:30px;
+  color: gray;
+}
+
+.container .menu_info .info{
+  color: #228816;
+  height: 60px;
+  font-size:30px;
+  font-style:italic;
+}
+
+.container .menu_info .description, .container .menu_info .list ul li{
+  color: gray;
+  width: 700px;
+  height: 220px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size:16px;
+  overflow: wrap;
+  font-family: 'Playfair Display', serif;
+}
+
+.container .menu_info .list ul li{
+  color: white;
+  height: 30px;
+}
+
+.container .menu_info .socials a{
+  font-size: 48px;
+}
+.container .menu_info .socials a img{
+  width: 60px;
+  height:60px;
+  vertical-align: -14px;
+}

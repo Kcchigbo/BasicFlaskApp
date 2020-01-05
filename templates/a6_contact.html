@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- The opening of my html file-->
+
+  
+  <head>
+    <meta charset = "UTF-8">
+    <title> A basic flask deployed website using html/css, About Me Section </title>
+    <!-- Parent css file-->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename ='a1_main.css') }}">
+    <!--Child css file -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename ='a6_contact.css') }}">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">  
+  </head>
+
+  <body>
+    <div class = "container">
+       
+      
+      <!--Menubar container-->
+      <div class = "menubar">
+        <ul>
+
+          <!-- My Profile-->
+          <div class="profile">
+            <ul class = "profile_img">
+              <a href="/"><img src="https://cdn.glitch.com/6eba1120-a0a7-4b74-83d9-cad178a366fa%2FIMG_0195.JPG?v=1577407195009" alt = "profile_img"></a>
+            </ul>
+            
+            <h1>Kimberly <span style="background-color:white">Chigbo</span></h1>
+            <h2><span>Aspiring</span> Electrical <span>Engineer</span></h2>
+                        
+            <!--Contact info-->
+            <ul class = "contact_info">
+              <a href="mailto:Kimberlychigbo@gmail.com" target="_blank"><span style="background-color:white"><i class="fas fa-envelope"></i></span> Kimberlychigbo@gmail.com</a>
+            </ul>
+            
+            <!-- Social media platforms-->
+            <ul class="socials">
+              <a href="https://www.facebook.com/kimye.chigbo?ref=bookmarks" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://github.com/Kcchigbo" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://drive.google.com/open?id=1ZOn7wO3cPM0K-lbZwRkhBhO3NzK2XYnE" target="_blank"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://devpost.com/Kcchigbo?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank"><img src="https://cdn.glitch.com/6eba1120-a0a7-4b74-83d9-cad178a366fa%2Fdevposticon.png?v=1577643322668" alt = "devpost"></a>
+            </ul>
+            
+          </div>
+
+          <!-- Menu-->
+          <li id = "about"><a href="/"><i class="fas fa-user"></i>ABOUT</a></li>         
+          <li id = "projects"><a href="/projects"><i class="fas fa-project-diagram"></i>PROJECTS</a></li>
+          <!--Creating a dropdown menu for PORTFOLIO-->
+          <ul> 
+            <li id = "portfolio"><a href="/portfolio"><i class="fas fa-briefcase"></i>PORTFOLIO<i class="fas fa-chevron-circle-down"></i></a></li>
+            <!--Hidden toggle -->
+              <ul id = "navbar_div">
+                  <li id = "workexperiences"><a href="#"><i class="fas fa-newspaper"></i>Work Experiences</a></li>
+                  <li id = "eventscommunity"><a href="#"><i class="fas fa-people-carry"></i>Events & Community</a></li>
+              </ul><!--End of toggle-->
+            </ul><!--End of dropdown submenu-->
+            <li id = "blogs"><a href="/blogs"><i class="fas fa-blog"></i>BLOGS</a></li>
+            <li id = "badges"><a href="/badges"><i class="fas fa-award"></i>BADGES</a></li>
+            <li id = "contact"><a href="/contact"><i class="fas fa-phone-alt"></i>CONTACT</a></li>
+          
+        </ul>
+      </div><!--End of main menubar-->
+      
+      
+      <!-- Menu info container-->
+      <div class = "menu_info"> 
+          <div class = "headers">Contact <span>&gt&gt</span></div>
+          <div class = "info"> 
+            Contact page will be up soon. Please come back later.
+          </div>
+          <img src="https://cdn.glitch.com/6eba1120-a0a7-4b74-83d9-cad178a366fa%2Fclipartwiki.com-propel-clipart-1842841.png?v=1577940284955" alt = "devpost">
+          <!-- .container .menu_info .description, .container .menu_info .list, .container .menu_info .socials-->
+      </div>
+      
+    </div> <!--End of main container-->
+  </body>
+
+
+</html> <!-- The closing of my html file-->
+
+

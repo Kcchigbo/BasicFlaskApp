@@ -1,0 +1,23 @@
+.container .menu_info .headers{
+  color: #24251F;
+}
+.container .menu_info .headers span, .container .menu_info {
+  background-color: white;
+}
+
+.container .menu_info{
+  padding-left: 80px;
+  padding-top: 50px;
+  color: red;
+  height: 350px;
+  width: 81.8%;
+  padding-left:260px;
+}
+.container .menu_info .info{
+  padding-top: 10px
+}
+
+.container .menu_info img{
+  width: 350px;
+  height: 100px;
+}

@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- The opening of my html file-->
+
+  
+  <head>
+    <meta charset = "UTF-8">
+    <title> A basic flask deployed website using html/css, About Me Section </title>
+    <!--Using flaskfunction url_for() to help dynamically allocate my style.css file incase it is moved-->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename ='a1_main.css') }}">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">  
+  </head>
+
+  <body>
+    <div class = "container">
+       
+      
+      <!--Menubar container-->
+      <div class = "menubar">
+        <ul>
+
+          <!-- My Profile-->
+          <div class="profile">
+            <ul class = "profile_img">
+              <a href="/"><img src="https://cdn.glitch.com/6eba1120-a0a7-4b74-83d9-cad178a366fa%2FIMG_0195.JPG?v=1577407195009" alt = "profile_img"></a>
+            </ul>
+            
+            <h1>Kimberly <span style="background-color:white">Chigbo</span></h1>
+            <h2><span>Aspiring</span> Electrical <span>Engineer</span></h2>
+                        
+            <!--Contact info-->
+            <ul class = "contact_info">
+              <a href="mailto:Kimberlychigbo@gmail.com" target="_blank"><span style="background-color:white"><i class="fas fa-envelope"></i></span> Kimberlychigbo@gmail.com</a>
+            </ul>
+            
+            <!-- Social media platforms-->
+            <ul class="socials">
+              <a href="https://www.facebook.com/kimye.chigbo?ref=bookmarks" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://github.com/Kcchigbo" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://drive.google.com/open?id=1ZOn7wO3cPM0K-lbZwRkhBhO3NzK2XYnE" target="_blank"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://devpost.com/Kcchigbo?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank"><img src="https://cdn.glitch.com/6eba1120-a0a7-4b74-83d9-cad178a366fa%2Fdevposticon.png?v=1577643322668" alt = "devpost"></a>
+            </ul>
+            
+          </div>
+
+          <!-- Menu-->
+          <li id = "about"><a href="/"><i class="fas fa-user"></i>ABOUT</a></li>         
+          <li id = "projects"><a href="/projects"><i class="fas fa-project-diagram"></i>PROJECTS</a></li>
+          <!--Creating a dropdown menu for PORTFOLIO-->
+          <ul> 
+            <li id = "portfolio"><a href="/portfolio"><i class="fas fa-briefcase"></i>PORTFOLIO<i class="fas fa-chevron-circle-down"></i></a></li>
+            <!--Hidden toggle -->
+              <ul id = "navbar_div">
+                  <li id = "workexperiences"><a href="#"><i class="fas fa-newspaper"></i>Work Experiences</a></li>
+                  <li id = "eventscommunity"><a href="#"><i class="fas fa-people-carry"></i>Events & Community</a></li>
+              </ul><!--End of toggle-->
+            </ul><!--End of dropdown submenu-->
+            <li id = "blogs"><a href="/blogs"><i class="fas fa-blog"></i>BLOGS</a></li>
+            <li id = "badges"><a href="/badges"><i class="fas fa-award"></i>BADGES</a></li>
+            <li id = "contact"><a href="/contact"><i class="fas fa-phone-alt"></i>CONTACT</a></li>
+          
+        </ul>
+      </div><!--End of main menubar-->
+      
+      
+      <!-- Menu info container-->
+      <div class = "menu_info"> 
+          <div class = "headers">Hello<span>,</span></div>
+          <div class = "info">20 years <span>/</span> Brampton <span>/</span> Student</div>
+          <div class = "description">Welcome to my website! I'm Kimberly Chigbo, a 1st year <span>Electrical Engineering </span>student
+            at the <span>Lassonde School of Engineering </span> at York University. I have great interest in AI, Machine 
+            learning, Power Conservation, and Sustainability related ventures. I am passionate about innovation, and technological advancement 
+            but more so interested in rendering public services to the community. As I continue my education in STEM, my future goal 
+            surrounds starting a venture or working in a startup environment because it encourages taking on more roles and responsibilities. 
+            I love the <span>challenge!</span> This will also provide me with loads of opportunities in gaining new skills and experiences, 
+            challenge myself to tackle various tasks, to surround myself with great thinkers and pioneering mindset of innovative people.
+          </div>
+          <div class = "list">
+            <ul>
+             <li><span>Hobbies:</span> Love traveling, running, biking</li>
+             <li><span>Language:</span> Functional knowledge of C++, Python, MATLAB, PowerPoint, Excel</li>
+             <li><span>Tools:</span> Git, Flask, Heroku</li>
+
+            </ul>
+          </div>
+          <!-- Social media platforms-->
+          <div class = "socials">
+              <a href="https://www.facebook.com/kimye.chigbo?ref=bookmarks" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://github.com/Kcchigbo" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://drive.google.com/open?id=1ZOn7wO3cPM0K-lbZwRkhBhO3NzK2XYnE" target="_blank"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://devpost.com/Kcchigbo?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank"><img src="https://cdn.glitch.com/6eba1120-a0a7-4b74-83d9-cad178a366fa%2Fdevposticon.png?v=1577643322668" alt = "devpost"></a>
+          </div>
+
+      </div>
+    </div> <!--End of main container-->
+  </body>
+
+
+</html> <!-- The closing of my html file-->
+
+
