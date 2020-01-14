@@ -97,7 +97,7 @@ body {
   font-size: 25px;
 }
 
-.fa-facebook:hover, .fa-github:hover, .fa-file-pdf:hover, .fa-certificate:hover{
+.fa-facebook:hover, .fa-github:hover, .fa-file-pdf:hover, .fa-stamp:hover{
   font-size: 50px;
   color: #228816;
 }
